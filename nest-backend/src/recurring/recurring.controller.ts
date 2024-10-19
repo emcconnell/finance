@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Put, Delete, Param, Body, Res } from '@nestjs/common';
-import { RecurringService } from './recurring.service';
-import { RecurringTransaction } from './recurring.model';
+import { RecurringService } from '../dist/recurring/recurring.service';
+import { RecurringTransaction } from '../dist/recurring/recurring.model';
 import { Response } from 'express';
 import { join } from 'path';
 

@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Put, Delete, Param, Body, NotFoundException, Res } from '@nestjs/common';
-import { AccountsService } from './accounts.service';
-import { Account } from './account.model';
+import { AccountsService } from '../dist/accounts/accounts.service';
+import { Account } from '../dist/accounts/account.model';
 import { Response } from 'express';
 import { join } from 'path';
 
