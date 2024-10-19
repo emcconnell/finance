@@ -4,7 +4,7 @@
   "description": "Finance Management Dashboard",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node nest-backend/src/main.ts",
+    "start": "nest start",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

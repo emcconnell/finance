@@ -1,6 +1,8 @@
-import { Controller, Get, Post, Put, Delete, Param, Body } from '@nestjs/common';
+import { Controller, Get, Post, Put, Delete, Param, Body, Res } from '@nestjs/common';
 import { RecurringService } from './recurring.service';
 import { RecurringTransaction } from './recurring.model';
+import { Response } from 'express';
+import { join } from 'path';
 
 @Controller('recurring')
 export class RecurringController {
@@ -29,5 +31,10 @@ export class RecurringController {
   @Delete(':id')
   deleteRecurringTransaction(@Param('id') id: string): RecurringTransaction {
     return this.recurringService.deleteRecurringTransaction(id);
+  }
+
+  @Get('/')
+  serveIndex(@Res() res: Response) {
+    res.sendFile(join(__dirname, '..', '..', 'client', 'index.html'));
   }
 }
