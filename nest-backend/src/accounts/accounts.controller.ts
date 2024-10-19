@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Put, Delete, Param, Body, NotFoundException, Res } from '@nestjs/common';
-import { AccountsService } from '../dist/accounts/accounts.service';
-import { Account } from '../dist/accounts/account.model';
+import { AccountsService } from '../src/accounts/accounts.service';
+import { Account } from '../src/accounts/account.model';
 import { Response } from 'express';
 import { join } from 'path';
 
@@ -43,10 +43,5 @@ export class AccountsController {
       throw new NotFoundException('Account not found');
     }
     return deletedAccount;
-  }
-
-  @Get('/')
-  serveIndex(@Res() res: Response) {
-    res.sendFile(join(__dirname, '..', '..', 'client', 'index.html'));
   }
 }

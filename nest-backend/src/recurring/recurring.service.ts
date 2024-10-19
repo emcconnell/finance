@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { RecurringTransaction } from '../dist/recurring/recurring.model';
+import { RecurringTransaction } from '../src/recurring/recurring.model';
 
 @Injectable()
 export class RecurringService {
