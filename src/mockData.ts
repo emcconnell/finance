@@ -27,7 +27,6 @@ export const mockData = {
       description: "Netflix Subscription",
       amount: -24.50,
       date: "6/14/2023",
-      color: "red",
     },
     {
       id: 2,
@@ -35,7 +34,6 @@ export const mockData = {
       description: "Salary Deposit",
       amount: 500.00,
       date: "5/31/2023",
-      color: "green",
     },
     {
       id: 3,
@@ -43,7 +41,6 @@ export const mockData = {
       description: "Grocery Shopping",
       amount: -55.40,
       date: "6/9/2023",
-      color: "red",
     },
     {
       id: 4,
@@ -51,7 +48,6 @@ export const mockData = {
       description: "Spotify Subscription",
       amount: -9.99,
       date: "6/4/2023",
-      color: "red",
     },
     {
       id: 5,
@@ -59,7 +55,6 @@ export const mockData = {
       description: "Amazon Purchase",
       amount: -39.99,
       date: "6/7/2023",
-      color: "red",
     },
     {
       id: 6,
@@ -67,7 +62,6 @@ export const mockData = {
       description: "Electricity Bill",
       amount: -60.00,
       date: "6/15/2023",
-      color: "red",
     },
     {
       id: 7,
@@ -75,7 +69,6 @@ export const mockData = {
       description: "Freelance Payment",
       amount: 300.00,
       date: "6/10/2023",
-      color: "green",
     },
   ],
   accounts: [
