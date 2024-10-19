@@ -1,0 +1,107 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+#sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#main-dashboard {
+    flex: 1;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+#summary-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 23%;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#overview-graph {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 8px;
+    height: 300px;
+}
+
+#recent-transactions {
+    width: 300px;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+#recent-transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recent-transactions ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#recent-transactions ul li.expense {
+    background-color: #3e3e3e;
+}
+
+#recent-transactions ul li.income {
+    background-color: #2e2e2e;
+}
+
+#recent-transactions ul li .icon {
+    margin-right: 10px;
+}

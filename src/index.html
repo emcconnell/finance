@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#accounts">Accounts</a></li>
+                    <li><a href="#total-balance">Total Balance</a></li>
+                    <li><a href="#monthly-income">Monthly Income</a></li>
+                    <li><a href="#monthly-expenses">Monthly Expenses</a></li>
+                    <li><a href="#savings-rate">Savings Rate</a></li>
+                    <li><a href="#recurring">Recurring</a></li>
+                    <li><a href="#forecasts">Forecasts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main-dashboard">
+            <div id="summary-cards">
+                <div class="card">
+                    <h3>Total Balance</h3>
+                    <p>$7,000.00</p>
+                    <a href="#total-balance-details">View details</a>
+                </div>
+                <div class="card">
+                    <h3>Monthly Income</h3>
+                    <p>$0.00</p>
+                    <a href="#monthly-income-details">View details</a>
+                </div>
+                <div class="card">
+                    <h3>Monthly Expenses</h3>
+                    <p>$0.00</p>
+                    <a href="#monthly-expenses-details">View details</a>
+                </div>
+                <div class="card">
+                    <h3>Savings Rate</h3>
+                    <p>0%</p>
+                    <a href="#savings-rate-details">View details</a>
+                </div>
+            </div>
+            <div id="overview-graph">
+                <!-- Bar chart will be rendered here -->
+            </div>
+        </div>
+        <div id="recent-transactions">
+            <ul>
+                <li class="expense">
+                    <span class="icon">🔴</span>
+                    <span>Netflix Subscription</span>
+                    <span>-$24.50</span>
+                    <span>6/14/2023</span>
+                </li>
+                <li class="income">
+                    <span class="icon">🟢</span>
+                    <span>Salary Deposit</span>
+                    <span>$500.00</span>
+                    <span>5/31/2023</span>
+                </li>
+                <li class="expense">
+                    <span class="icon">🔴</span>
+                    <span>Grocery Shopping</span>
+                    <span>-$55.40</span>
+                    <span>6/9/2023</span>
+                </li>
+                <li class="expense">
+                    <span class="icon">🔴</span>
+                    <span>Spotify Subscription</span>
+                    <span>-$9.99</span>
+                    <span>6/4/2023</span>
+                </li>
+                <li class="expense">
+                    <span class="icon">🔴</span>
+                    <span>Amazon Purchase</span>
+                    <span>-$39.99</span>
+                    <span>6/7/2023</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
