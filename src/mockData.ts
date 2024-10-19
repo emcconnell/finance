@@ -51,6 +51,18 @@ export const mockData = {
       date: "6/7/2023",
       color: "red",
     },
+    {
+      description: "Electricity Bill",
+      amount: "-$60.00",
+      date: "6/15/2023",
+      color: "red",
+    },
+    {
+      description: "Freelance Payment",
+      amount: "$300.00",
+      date: "6/10/2023",
+      color: "green",
+    },
   ],
   accounts: [
     {
@@ -62,6 +74,16 @@ export const mockData = {
       id: 2,
       name: "Savings Account",
       balance: "$4,000.00",
+    },
+    {
+      id: 3,
+      name: "Credit Card",
+      balance: "$1,500.00",
+    },
+    {
+      id: 4,
+      name: "Investment Account",
+      balance: "$10,000.00",
     },
   ],
   recurringTransactions: [
@@ -75,6 +97,18 @@ export const mockData = {
       id: 2,
       description: "Spotify Subscription",
       amount: "-$9.99",
+      frequency: "Monthly",
+    },
+    {
+      id: 3,
+      description: "Gym Membership",
+      amount: "-$30.00",
+      frequency: "Monthly",
+    },
+    {
+      id: 4,
+      description: "Internet Bill",
+      amount: "-$50.00",
       frequency: "Monthly",
     },
   ],
