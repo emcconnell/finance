@@ -9,7 +9,7 @@ export class AccountsService {
     return this.accounts;
   }
 
-  getAccountById(id: string): Account {
+  getAccountById(id: string): Account | undefined {
     return this.accounts.find(account => account.id === id);
   }
 
@@ -18,7 +18,7 @@ export class AccountsService {
     return account;
   }
 
-  updateAccount(id: string, updatedAccount: Account): Account {
+  updateAccount(id: string, updatedAccount: Account): Account | null {
     const accountIndex = this.accounts.findIndex(account => account.id === id);
     if (accountIndex !== -1) {
       this.accounts[accountIndex] = { ...this.accounts[accountIndex], ...updatedAccount };
@@ -27,7 +27,7 @@ export class AccountsService {
     return null;
   }
 
-  deleteAccount(id: string): Account {
+  deleteAccount(id: string): Account | null {
     const accountIndex = this.accounts.findIndex(account => account.id === id);
     if (accountIndex !== -1) {
       const deletedAccount = this.accounts.splice(accountIndex, 1);
