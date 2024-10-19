@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Put, Delete, Param, Body } from '@nestjs/common';
+import { Controller, Get, Post, Put, Delete, Param, Body, NotFoundException } from '@nestjs/common';
 import { AccountsService } from './accounts.service';
 import { Account } from './account.model';
 
@@ -13,7 +13,11 @@ export class AccountsController {
 
   @Get(':id')
   getAccountById(@Param('id') id: string): Account {
-    return this.accountsService.getAccountById(id);
+    const account = this.accountsService.getAccountById(id);
+    if (!account) {
+      throw new NotFoundException('Account not found');
+    }
+    return account;
   }
 
   @Post()
@@ -23,11 +27,19 @@ export class AccountsController {
 
   @Put(':id')
   updateAccount(@Param('id') id: string, @Body() account: Account): Account {
-    return this.accountsService.updateAccount(id, account);
+    const updatedAccount = this.accountsService.updateAccount(id, account);
+    if (!updatedAccount) {
+      throw new NotFoundException('Account not found');
+    }
+    return updatedAccount;
   }
 
   @Delete(':id')
   deleteAccount(@Param('id') id: string): Account {
-    return this.accountsService.deleteAccount(id);
+    const deletedAccount = this.accountsService.deleteAccount(id);
+    if (!deletedAccount) {
+      throw new NotFoundException('Account not found');
+    }
+    return deletedAccount;
   }
 }
